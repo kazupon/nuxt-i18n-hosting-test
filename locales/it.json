@@ -1,0 +1,16 @@
+{
+    "schedaTecnica" : {
+        "nomeVino" : "Nome Vino",
+        "denominazione" : "Denominazione",
+        "volume": "Volume Bottiglia",
+        "uve" : "Uve",
+        "origine" : "Origine",
+        "sistema" : "Sistema d'Allevamento",
+        "densità" : "Densità d'Impianto",
+        "eta" : "Età media delle Viti",
+        "periodo" : "Periodo di Vendemmia",
+        "vinificazione" : "Vinificazione",
+        "affinamento" : "Affinamento in Bottiglia",
+        "alcol" : "Alcol"
+    }
+}

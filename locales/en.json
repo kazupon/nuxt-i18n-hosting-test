@@ -1,0 +1,16 @@
+{
+    "schedaTecnica" : {
+        "nomeVino" : "Wine Name",
+        "denominazione" : "Denomination",
+        "volume": "Bottle size",
+        "uve" : "Grapes",
+        "origine" : "Origin",
+        "sistema" : "Cultivation System",
+        "densità" : "Vineyard Density",
+        "eta" : "Avarage Plant Age",
+        "periodo" : "Harvest Season",
+        "vinificazione" : "Vinification",
+        "affinamento" : "Refining in Bottle",
+        "alcol" : "Alcol"
+    }
+}

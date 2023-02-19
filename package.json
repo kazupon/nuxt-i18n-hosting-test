@@ -1,0 +1,22 @@
+{
+  "private": false,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
+    "@volar-plugins/vetur": "latest",
+    "nuxt": "^3.2.0"
+  },
+  "dependencies": {
+    "@volar-plugins/vetur": "latest",
+    "vue-router": "^4.1.6"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

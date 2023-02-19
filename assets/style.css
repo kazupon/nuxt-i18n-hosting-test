@@ -1,0 +1,231 @@
+button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1;margin:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{line-height:1.15;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+@font-face {
+  font-family: 'Noto Sans';
+    src: local('');
+    src:  url('~/assets/fonts/noto-sans/noto-sans-v27-latin-regular.woff2') format('woff2'),
+          url('~/assets/fonts/noto-sans/noto-sans-v27-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+    src: local('');
+    src:  url('~/assets/fonts/noto-sans/noto-sans-v27-latin-800.woff2') format('woff2'),
+          url('~/assets/fonts/noto-sans/noto-sans-v27-latin-800.woff') format('woff');
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+     src: local('');
+     src: url('~/assets/fonts/noto-sans/noto-sans-v27-latin-italic.woff2') format('woff2'),
+          url('~/assets/fonts/noto-sans/noto-sans-v27-latin-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+    src: local('');
+    src:  url('~/assets/fonts/noto-serif/noto-serif-v21-latin-regular.woff2') format('woff2'),
+          url('~/assets/fonts/noto-serif/noto-serif-v21-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+    src: local('');
+    src:  url('~/assets/fonts/noto-serif/noto-serif-v21-latin-700.woff2') format('woff2'),
+          url('~/assets/fonts/noto-serif/noto-serif-v21-latin-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: local('');
+  src:  url('~/assets/fonts/noto-serif/noto-serif-v21-latin-700italic.woff2') format('woff2'),
+        url('~/assets/fonts/noto-serif/noto-serif-v21-latin-700italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+p,div,li {
+  font-family: "Noto Sans", Times, serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Noto Serif", Times, serif;
+  font-weight: 700;
+}
+
+h1{
+ font-size: 3em;
+}
+
+h2{
+font-size: 2.5em;
+}
+
+h3{
+  font-size: 2.2em;
+}
+
+h4{
+  font-size: 2em;
+}
+
+
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all .1s linear;
+  padding-left: 0em;
+  padding-right: 1.5em;
+  background: rgba(55, 55, 55, 0.3);
+}
+
+.nav_height{
+  height: 60px;
+}
+
+.nav_scroll{
+  height: 60px;
+}
+
+.nav_logo {
+  margin-left: 0;
+
+}
+
+.nav_menu {
+  margin-right: 0;
+}
+
+.nav_desktop_items {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 22px;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+}
+
+.nav_desktop{
+  display:none;
+}
+
+.full_section{
+  width:100%;
+}
+
+.main_section{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow:hidden
+}
+
+.sc_list > li{
+  padding-top: 1.5rem;
+}
+
+.sc_list > li:first-child {
+  margin-top:0;
+}
+
+.sc_links{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+
+.button_orange{
+  display: block;
+  background: #e8b635;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.38rem 1rem 0.38rem 1rem;
+  margin: 1rem 1rem 0rem 1rem;
+  border-radius: 30px;
+}
+
+.grid_container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav_mobile_menu_container{
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  margin: 0 50vw 0;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60vh;
+  background-color: #005500;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+.nav_mobile_items {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 22px;
+  text-transform: uppercase;
+  overflow-y: scroll;
+
+}
+
+@media (min-width: 768px) { 
+
+  .nav_height{
+    height: 100px;
+  }
+
+  .nav_desktop{
+    display:block;
+  }
+  .nav_mobile{
+    display:none;
+  }
+
+  .grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
