@@ -15,6 +15,7 @@ onUnmounted(() => window.removeEventListener('scroll', update))
 
 <template>
     <header class="nav_container" :class="[s.value ? 'nav_scroll' : 'nav_height']">
+        <h4>{{  $t('schedaTecnica.nomeVino') }}</h4>
         <div class="nav_logo"><NuxtLink :to="localePath('/')"><IconsLogo /></NuxtLink></div>
         <div class=""></div>
         <div class="nav_menu">
